@@ -1,0 +1,260 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.btn{
+    display: inline-block;
+    padding: 15px 60px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background:#111;
+    color:#fff;
+    border-radius: 5px;
+    
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+.btn:hover{
+    background: #2e1503;
+}
+.headline{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom:50px;
+    letter-spacing: 2px;
+}
+
+/*Navegaçao*/
+
+#navbar{
+    width: 100%;
+    height: 80px;
+    background: #000;
+    color:#fff;
+    position: fixed;
+}
+#navbar-container{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 2rem;
+}
+#navbar-items{
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+#navbar-items ul li{
+    color: aqua;
+}
+#navbar-items li{
+    padding: 20px;
+}
+/*Case*/
+#showcase{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    background: #4b371c;
+}
+#showcase-container{
+    text-align: center;
+}
+#showcase-container h2{
+    font-size: 2.5rem;
+}
+#showcase-container p{
+    font-size: 1.2rem;
+    padding: 10px 0;
+}
+
+/*mais pedida*/
+
+#mais-pedida{
+    width: 100%;
+    background: #fff;
+    color: #000;
+    padding: 50px;
+}
+#mais-container{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    padding: auto;
+    margin: auto;
+    
+}
+.titu-mais{
+    margin: 80px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: arial;
+    text-transform: uppercase;
+}
+.titu-mais h2{
+    float:left;
+}
+.pedida{
+    width: 480px;
+}
+.img-mais{
+    align-items: center;
+    display:flex;
+    width: 100%;
+    border-radius: 35px;
+    margin: 15px 0;
+}
+
+/*Pedida*/
+
+#pedido{
+    width: 100%;
+    background: #152525;
+    color: #fff;
+    padding: 50px;
+}
+.pedido{
+    display: flex;
+    align-items:center;
+    text-align: right;
+    font-size: 1.2rem;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+#pedido-container{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.img-pizza{
+    align-items: center;
+    display: block;
+    width: 20%;
+    border-radius: 5px;
+    margin: 15px;
+}
+.pedido h2{
+    display: flex;
+    font-family: arial;
+}
+.pedido p{
+    font-family: courier;
+    padding: 15px 0;
+}
+.titu{
+    text-transform: uppercase;
+}
+
+/*Contato*/
+#contato{
+    width: 100%;
+    height: 20%;
+    background: #ffffff;
+    color: #000000;
+    padding: 50px;
+}
+#contato-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    
+    padding: 50px;
+}
+.contato{
+    color: rgb(0, 0, 0);
+    padding: 10px 5px;
+}
+.contato p{
+    font-size: 1,3rem;
+    font-family: arial;
+    padding: 20px 10px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+#footer{
+    background: #000;
+    color:#fff;
+    padding: 30px;
+    text-align: center;
+}
+#footer p{
+    text-transform: uppercase;
+    font-family: arial;
+}
+
+/*Mobile*/
+
+@media only screen and (max-width: 760px){
+
+    /*Navegação*/
+
+    #navbar{
+        height: 290px;
+        position: fixed;
+    }
+    #navbar-container{
+        flex-direction: column;
+        padding: 20px 0;
+        
+    }
+    #navbar-items{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    /*case*/
+    #showcase-container{
+        padding: 40px;
+    }
+
+    /*mais pedida*/
+    #mais-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .img-mais{
+        width: 100%;
+    }
+   
+    /*Dica*/
+
+    #pedido-container{
+        
+        flex-direction: column;
+    }
+
+
+    /*Contato*/
+    #conato-container{
+        flex-direction: column;
+    }
+
+    .pedido{
+        flex-direction: column;
+    }
+    .img-pizza{
+        width: 100%;
+    }
+  
+}
